@@ -8,14 +8,12 @@ function UserCard({user}) {
             <img src={user.avatar_url} alt={user.name} />
             <div className="userDetails">
                 <h1>{user.name}</h1>
-                <span className="username"> @{user.login}</span>
+                <h4 className="username"> @{user.login}</h4>
                 <br />
-                <a href={user.following_url}>
-                    Following: {user.following} 
-                </a> 
-            
+                <small> Following {user.following}</small> 
+                <br />
+                <small> Followers {user.followers}</small>
                 <p>{user.bio}</p>
-            
             </div>
         </div>
             

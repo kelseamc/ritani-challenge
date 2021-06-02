@@ -19,10 +19,11 @@ function SearchContainer() {
 
     return (
         <>
+            <h3 className="title">Github Finder</h3>
             <form className="searchContainer" onSubmit={handleSearch}>
                     <input  className="searchBar" 
                             type="text" 
-                            placeholder= " 🔍 Search by Username..." 
+                            placeholder= "Search by Username..." 
                             value={search}
                             onChange={(e) => setsearch(e.target.value)}
                     />

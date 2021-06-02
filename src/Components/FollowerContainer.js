@@ -25,14 +25,14 @@ function FollowerContainer({user}) {
             })
 
     }
-
+    
     return (
         <div className="rightContainer">
             <h1 className="followerTitle"> Followers </h1>
              <div className="followerContainer">
                 {followers ? followers.map((fol) => <FollowerCard key={fol.id} follower={fol} />) : null}
+                {followers.length !== user.followers ? <button className="more-btn" onClick={moreFollowers}> Load More</button> : null}
             </div>
-            {followers.length !== user.followers ? <button className="more-btn" onClick={moreFollowers}> More</button> : null}
         </div>
        
     )
