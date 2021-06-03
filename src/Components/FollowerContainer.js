@@ -1,19 +1,20 @@
 import React, {useEffect, useState} from 'react'
 import FollowerCard from './FollowerCard'
 
+
+
 function FollowerContainer({user}) {
     const [followers, setFollowers] = useState([])
     const [page, setPage] = useState(2)
+  
 
     useEffect(() => {
         fetch(user.followers_url)
         .then((r) => r.json())
-        .then((data) => setFollowers(data))
-       
+        .then((data) => setFollowers(data))  
     }, [user])
 
     const moreFollowers = () => {
-       
             fetch(user.followers_url + `?page=${page}`)
             .then((r) => r.json())
             .then((data) => {
@@ -23,7 +24,6 @@ function FollowerContainer({user}) {
                     setPage(page + 1)
                 }  
             })
-
     }
     
     return (

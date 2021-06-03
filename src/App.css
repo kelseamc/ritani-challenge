@@ -88,9 +88,9 @@ body h1{
   }
 .userCard img {
     align-items: center;
-    width: 80%;
+    width: 70%;
     object-fit: contain;
-    margin-left: 10%;
+    margin-left: 15%;
     margin-top: 5%;
     border-radius: 5px;
 
@@ -168,7 +168,14 @@ body h1{
 
 }
 
+.message {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}
 
+.welcome{
+    text-align: center;
+}
 
   /* Mobile */
 @media (max-width: 666px){
@@ -185,11 +192,15 @@ body h1{
         margin-bottom: 2px;
     }
     .followerCard img {
-        width: 50%
+        width: 40%;
+        margin-top: 0;
     }
     .followerCard p {
         visibility: hidden;
       }
+    .more-btn{
+        margin-left: 10px;
+    }
     .userCard{
         height: 80%;
         padding-right: 10px;
