@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import '../styles/follower.css'
 import FollowerCard from './FollowerCard'
 import BeatLoader from 'react-spinners/BeatLoader'
 

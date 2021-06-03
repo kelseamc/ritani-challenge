@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/user.css'
 import FollowerContainer from './FollowerContainer'
 import UserCard from './UserCard'
 

@@ -1,0 +1,58 @@
+body {
+    background-color: #f3f5f7;
+    font-family: 'Montserrat', sans-serif;
+    color: #565867;
+}
+body h1{
+    font-family: 'Libre Baskerville', serif;
+}
+
+.title {
+    background-color: black;
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.message {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.welcome{
+    text-align: center;
+} 
+
+  /* Mobile */
+@media (max-width: 666px){
+    .rightContainer{
+        height: 80%;
+    }
+    .followerContainer{
+        height: 80%;
+    }
+    .followerCard{
+        width: 60%;
+        height: 15%;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .followerCard img {
+        width: 40%;
+        margin-top: 0;
+    }
+    .followerCard p {
+        visibility: hidden;
+      }
+    .more-btn{
+        margin-left: 10px;
+    }
+    .userCard{
+        height: 80%;
+        padding-right: 10px;
+    }
+    .userCard h3 {
+        font-size: 16px;
+    }
+}

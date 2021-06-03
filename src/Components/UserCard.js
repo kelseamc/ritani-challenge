@@ -1,8 +1,7 @@
-
 import React from 'react'
+import '../styles/user.css'
 
 function UserCard({user}) {
-    console.log(user)
     return (
         <div className="userCard" onClick={()=> window.open(`${user.html_url}`, "_blank")}>
             <img src={user.avatar_url} alt={user.name} />

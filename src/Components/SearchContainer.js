@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../styles/search.css'
 import UserContianer from './UserContianer'
 
 function SearchContainer() {
