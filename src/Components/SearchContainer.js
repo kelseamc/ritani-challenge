@@ -33,7 +33,6 @@ function SearchContainer() {
                             placeholder= "Search by Username..." 
                             value={search}
                             onChange={(e) => {
-                               
                                 setsearch(e.target.value)}
                             }
                     />
